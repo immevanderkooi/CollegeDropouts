@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Students Drop Out of College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #ddd;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Why Students Drop Out of College</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="content.html"><i class="fas fa-chart-line"></i> Findings</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>The problem we are trying to solve is why students drop out of college, to better understand what administrators can do to keep students enrolled. This is important because about 33% dropped out of college in 2023, which is an increase from previous years. Higher education and education equality are so important for the progress of society as a whole, so we aim to better understand what is leading to dropouts to employ strategies in universities that can prevent these dropouts in the future.</p>
+        <h2>Plan</h2>
+        <p>We plan on running a logistic regression to find out which variables and factors such as demographic, socioeconomic, and academic performance most contribute to graduation versus dropout. We also plan to use either a decision tree or a random forest to further visualize and understand our findings.</p>
+        <h2>Video Presentation</h2>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+    <script>
+        // JavaScript code to handle video loop
+        const video = document.querySelector('video');
+        video.addEventListener('ended', () => {
+            video.currentTime = 0;
+            video.play();
+        });
+    </script>
+</body>
+</html>
